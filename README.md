@@ -23,3 +23,6 @@ Comisión: 96125
    ```bash
    git clone [https://github.com/FerBarrionuevo95/trabajo_final_python26.git](https://github.com/FerBarrionuevo95/trabajo_final_python26.git)
    cd proyecto_final_django
+
+## Demostración en video 
+**Toca aquí para ver el funcionamiento:** [https://drive.google.com/file/d/1FeVvjj6Uy_6sS830C23hJjamg9PrDfSU/view?usp=sharing]

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 card p-4 shadow">
+        <h3>Editar Mi Perfil</h3>
+        <hr>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary w-100">Guardar Cambios</button>
+                <a href="{% url 'Home' %}" class="btn btn-secondary w-100 mt-2">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

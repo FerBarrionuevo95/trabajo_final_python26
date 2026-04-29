@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %} 
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <h1 class="display-4 fw-bold mb-4">Acerca de mí</h1>
+            <hr class="w-25 mx-auto mb-5">
+        </div>
+    </div>
+
+    <div class="row align-items-center justify-content-center">
+        <div class="col-md-4 text-center mb-4">
+            <img src="{% static 'img/mia.jpg.jpeg' %}" 
+                 class="img-fluid rounded-circle shadow-lg border border-4 border-white" 
+                 alt="Foto de Fernanda Barrionuevo" 
+                 style="width: 280px; height: 280px; object-fit: cover;">
+        </div>
+        
+        <div class="col-md-6 p-4 bg-light rounded shadow-sm">
+            <h2 class="fw-bold">¡Hola! Soy Fernanda Barrionuevo</h2>
+            <p class="lead text-primary">Estudiante de la Diplomatura de CoderHouse - Python</p>
+            <p class="text-muted">
+                Este blog es mi proyecto final de Python. A lo largo del curso aprendí a manejar la lógica de Django, 
+                la creación de modelos, el sistema de usuarios y la personalización de plantillas con Bootstrap.
+            </p>
+            <p>
+                <strong>Tecnologías utilizadas:</strong><br>
+                <span class="badge bg-primary">Python</span>
+                <span class="badge bg-success">Django</span>
+                <span class="badge bg-info">Bootstrap 5</span>
+                <span class="badge bg-dark">SQLite</span>
+            </p>
+            <div class="mt-4">
+                <a href="{% url 'Home' %}" class="btn btn-dark btn-lg">Explorar el Blog</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
